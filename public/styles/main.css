@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.form-select, .form-submit {
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+.form-select:hover, .form-select:focus {
+  border-color: #0077ff;
+}
+.form-submit {
+  background-color: #0077ff;
+  color: #fff;
+}
+.form-submit:hover {
+  background-color: #005fcb;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-item {
+  background-color: #f1f5ff;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 119, 255, 0.08);
+  text-align: left;
+}
+.card-activity {
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+}
+.card-type {
+  color: #0077ff;
+}
+.card-participants {
+  font-style: italic;
+}
+.tag-error {
+  color: #b00020;
+  background: #ffe6e6;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ffcccc;
+}
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }}
